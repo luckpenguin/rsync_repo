@@ -1,0 +1,7 @@
+/var/www/html/repo/log/mariadb/mariadb_status.log {
+    notifempty
+    compress
+    daily
+    rotate 2
+    create 0644 root root
+}
