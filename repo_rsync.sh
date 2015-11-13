@@ -15,11 +15,16 @@ case $repo in
 "centos")
 	exclude="--exclude=HEADER.html"
 	Repo="centos"
-	#src='rsync://mirrors.ustc.edu.cn/centos/'
+	src='rsync://mirrors.ustc.edu.cn/centos/'
 	#src='rsync://us-msync.centos.org/CentOS/'
 	#src='rsync://mirrors.skyshe.cn/centos/'
 	#src='rsync://mirrors.hust.edu.cn/centos/'
-	src='rsync://ftp.iij.ad.jp/centos/'
+	#src='rsync://ftp.iij.ad.jp/centos/'
+        ;;
+"ceph")
+	#exclude="--exclude=HEADER.html"
+	Repo="ceph"
+	src='rsync://eu.ceph.com/ceph'
         ;;
 "debian")
 	#exclude="--exclude=project/trace/"
